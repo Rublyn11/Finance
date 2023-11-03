@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: hidden;
+}
+
+:root{
+    --color-primary: #6c63ff;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-danger-variant: rgba(247, 88, 66, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.7);
+    --color-black: #800;
+    --color-bg: #1743f5;
+    --colorbg1: #1922a3;
+    --color-bg2: #1e289b;
+    
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+.container{
+    width: 75%;
+    margin: auto;
+}
+
+.btn{
+    background: var(--color-bg);
+    color: var(--color-white);
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+}
+
+.btn_primary{
+    background: var(--color-white);
+    color: var(--color-bg);
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+}
+
+.btn_secondary{
+    background: var(--color-white);
+    color: var(--color-bg);
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--color-bg);
+    border-radius: .5rem;
+    outline: none;
+}
+
+.btn_trans{
+    color: var(--color-white);
+    padding: 1rem 1.5rem;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+header{
+    background: var(--color-bg);
+    height: 100vh;
+}
+
+.navbar{
+    padding: 1.3rem;
+}
+
+.nav_main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_logo > h1{
+    color: var(--color-white);
+    font-size: 2rem;
+}
+
+.nav_links > ul{
+    display: flex;
+    gap: .7rem;
+}
+
+.nav_links > ul > li > a{
+    color: var(--color-white);
+}
+
+.nav_contact > a{
+    color: var(--color-white);
+}
+
+.nav_contact > a > .bx{
+    padding: .5rem;
+    border-radius: 50%;
+    background: #555555;
+}
+
+.nav_contact{
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.drop_down:hover .pages_extension{
+    display: block;
+}
+
+.pages_extension{
+    position: absolute;
+    display: none;
+    background: var(--color-white);
+    padding: .5rem;
+    border-radius: .3rem;
+}
+
+.hero_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.3rem;
+}
+
+.hero_img{
+    width: 50%;
+    z-index: 1000;
+}
+
+.hero_img > img{
+    width: 450px;
+    height: 300px;
+}
+
+.hero{
+    margin-top: 6rem;
+}
+
+.hero_text{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 50%;
+}
+
+.hero_txt{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero_txt > h1{
+    color: var(--color-white);
+}
+
+.hero_txt p{
+    color: #c7c4c4;
+}
+
+.design{
+    position: absolute;
+    top: 0;
+    right: -200px;
+}
+
+.design > img{
+    height: 600px;
+    width: 600px;
+}
+
+/* End of the hero section */
+
+.about_main{
+    display: flex;
+    gap: 4rem;
+    padding: 3rem;
+}
+
+.about_text{
+    width: 50%;
+}
+
+.about_img{
+    width: 50%;
+    height: 23rem;
+    overflow: hidden;
+    
+}
+
+.about_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.about_text{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-left: .5rem;
+}
+
+.block_one{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.block_one > p{
+    color: #c7c4c4;
+    font-size: 15px;
+}
+
+.block_two{
+    display: flex;
+    gap: 1rem;
+}
+
+.two_text > p{
+    width: 300px;
+    color: #c7c4c4;
+}
+
+.block_two_icon > button{
+    outline: none;
+    border: none;
+    background: var(--color-white);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.block_two_icon > button .bxs-chart{
+    font-size: 2rem;
+    color: var(--color-bg);
+}
+
+.block_two_icon > button .bxs-pie-chart-alt-2{
+    font-size: 2rem;
+    color: var(--color-bg);
+}
+
+/* End of the about section */
+
+.aim{
+    background: var(--color-bg);
+    height: 20vh;
+}
+
+.aim_btn button{
+    outline: none;
+    border: none;
+    background: var(--color-white);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.aim_btn button .bx{
+    font-size: 3rem;
+    color: var(--color-bg);
+}
+
+.aim_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+}
+
+.aim_card{
+    display: flex;
+}
